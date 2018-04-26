@@ -16,7 +16,14 @@ class Operators
    
    System.out.println("a:: "+ a);
    //System.out.println("b:: "+ b);*/
+   
+  // int a=1;
+   //int b=10;
+   
+   String z=12>3? "Rajesh":"Manish";
+   System.out.println(z);
 
+   
   }
 }
 
@@ -42,7 +49,7 @@ class Operators
 
    Increment/Decrement (unary)  ++ and -- (prefix,postfix)
 
-   Bitwise Operators --- &,|,^,>>,<<,~(negation)
+   Bitwise Operators --- &,|,^,>>,<<,~(unary)(negation)
 
    
 
