@@ -14,11 +14,11 @@ class Person
 	  city="UnKnown";
   }//
   
-  Person(int x,String y,int z,String c){
-     sno=x;
-     name=y;
-     age=z;
-     city=c;	 
+  Person(int sno,String name,int age,String city){
+    this.sno=sno;
+	this.name=name;
+	this.age=age;
+	this.city=city;
   }
   public void showPerson(){
 	   System.out.println("sno:"+sno);
@@ -27,9 +27,22 @@ class Person
 	   System.out.println("City:"+city);
    }
 
+   public void  setPerson(String name,String city)
+   {
+	   this.name=name;
+	   this.city=city;
+	   System.out.println("Value changed");
+   }
+   
+   public void setPerson(String name)
+   {
+	   this.name=name;
+   }
 }
 
 /*
+   this refers to current object
+   
    Constructor is a special function
    which instantiates an object and in general
    it is used for instance variables intialization
@@ -51,4 +64,19 @@ class Person
    public 
    protected
    default(No keyword)
+   
+   Method overloading-(polymorphism)
+   
+      One name multiple methods
+	  
+	  Difference should be created b/w multiple copies of the same method
+	  
+	  between 
+	  number of parameters
+	  order of parameters
+	  type of the parameters
+	  
+	  return type and access specifiers doesnot matter
+	  
+	  
 */

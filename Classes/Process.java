@@ -4,11 +4,20 @@ class Process
   {
      Person obj=new Person();
 	 Person obj1=new Person(12,"Raj",75,"Chennai");
+	 
 	 Person obj2;
 	 System.out.println(obj1);
 	 
 	 obj1.showPerson();
+	 System.out.println("------------------------------------");
+	 obj1.setPerson("Robert","Jaipur");
+	 obj1.showPerson();
+	  System.out.println("------------------------------------");
 	 obj.showPerson();
+	 obj.setPerson("Nakul");
+	  System.out.println("------------------------------------");
+	 obj.showPerson();
+	 
   }
 
 }
