@@ -1,0 +1,18 @@
+
+class can be there in a class( both non static and static)
+class can be there in a method( local class)
+class can be there in an interface
+class can be there without name(Anonymous class)
+
+To handle and address Exceptions
+
+Java Provides five keywords
+
+   try
+   throw
+   catch
+   throws
+   finally
+   
+In Java Every Exception is represented by using a class
+

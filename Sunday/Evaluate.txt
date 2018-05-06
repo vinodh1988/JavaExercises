@@ -1,0 +1,9 @@
+class Evaluate{
+}
+
+class Example
+{
+  public static void main(String n[]){
+  
+  }
+}
