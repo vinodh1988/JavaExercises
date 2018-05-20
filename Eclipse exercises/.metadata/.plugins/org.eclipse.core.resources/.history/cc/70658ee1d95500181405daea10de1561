@@ -1,0 +1,18 @@
+package com.util;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import com.io.Employee;
+
+public class SetDemo {
+  public static void main(String n[]){
+	  Set l=new HashSet();
+	  l.add(null);
+	  l.add(null);
+	  l.add(1);
+	  l.add(1);
+	  l.add("Raj");
+	  l.add(new Employee(1,"Raj","Chennai",40));
+  }
+}

@@ -1,0 +1,22 @@
+package com.util;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.io.Employee;
+
+public class ListDemo {
+  public static void main(String n[]){
+	  List l=new ArrayList();
+	  l.add(null);
+	  l.add(null);
+	  l.add(1);
+	  l.add(1);
+	  l.add("Raj");
+	  l.add(new Employee(1,"Raj","Chennai",40));
+	  System.out.println(l);
+	  l.add(2,"Ganesh");
+	  l.remove(3);
+	  System.out.println(l);
+  }
+}

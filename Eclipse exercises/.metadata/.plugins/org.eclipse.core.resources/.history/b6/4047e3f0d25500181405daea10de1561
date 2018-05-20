@@ -1,0 +1,9 @@
+package com.util;
+
+import java.util.Stack;
+
+public class CollectDemo {
+   public static void main(String n[]){
+	   Stack s=new Stack();
+   }
+}

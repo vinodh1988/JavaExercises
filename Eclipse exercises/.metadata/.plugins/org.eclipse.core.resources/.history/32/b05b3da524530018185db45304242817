@@ -1,0 +1,5 @@
+package isqlglobal.entity;
+
+public class Enquiry {
+
+}

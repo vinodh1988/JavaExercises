@@ -1,0 +1,9 @@
+package com.io;
+
+public class ObjectRead {
+
+	public ObjectRead() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

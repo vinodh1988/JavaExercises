@@ -1,0 +1,37 @@
+package com.data.test;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+public class BlobRead {
+  public static void main(String n[]){
+	  try{
+		  Class.forName("oracle.jdbc.driver.OracleDriver");
+		  Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","hr","hr");
+		  Statement s=con.createStatement();
+		  ResultSet rs=s.executeQuery("select * from bloby");
+		  if(rs.next()){
+			  System.out.println(rs.getInt(1));
+			  System.out.println(rs.getString(2));
+			  File f=new File("E:\\test.txt");
+			  FileOutputStream fos = new FileOutputStream(f);
+
+		      byte[] buffer = new byte[1];
+		      InputStream is = rs.getBinaryStream(3);
+		      while (is.read(buffer) > 0) {
+		        fos.write(buffer);
+		      }
+		      fos.close(); 
+		      System.out.println("File has been Retrieved");
+		  }
+	  }
+	  catch(Exception e){
+		  e.printStackTrace();
+	  }
+  }
+}

@@ -1,0 +1,12 @@
+package com.data.test;
+
+public class BlobRead {
+  public static void main(String n[]){
+	  try{
+		  
+	  }
+	  catch(Exception e){
+		  e.printStackTrace();
+	  }
+  }
+}

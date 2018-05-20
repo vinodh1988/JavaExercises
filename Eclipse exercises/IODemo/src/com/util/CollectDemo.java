@@ -1,0 +1,22 @@
+package com.util;
+
+import java.util.Stack;
+
+public class CollectDemo {
+   public static void main(String n[]){
+	   Stack<Integer> s=new Stack<Integer>();
+	   
+	   s.push(34);
+	   s.push(56);
+	   s.push(78);
+	   s.push(90);
+	   
+	  System.out.println(s);
+	  
+	  System.out.println(s.pop());
+	  
+	  System.out.println(s);
+	  
+	  
+   }
+}

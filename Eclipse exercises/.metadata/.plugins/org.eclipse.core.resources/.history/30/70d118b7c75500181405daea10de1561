@@ -1,0 +1,21 @@
+package com.nio;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+public class NioFeature {
+
+	  public static  void main(String n[]){
+		  Path p=Paths.get("E:\\NewCopied.pdf");
+		  Path p1=Paths.get("E:\\CopiedVersion.pdf");
+		  
+		  try {
+			Files.copy(p, p1);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	  }
+}

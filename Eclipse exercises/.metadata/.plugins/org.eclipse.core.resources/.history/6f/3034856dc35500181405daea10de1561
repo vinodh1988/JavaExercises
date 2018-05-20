@@ -1,0 +1,11 @@
+package com.test;
+
+import java.lang.reflect.Method;
+
+public class Reflection {
+    public static void main(String n[]){
+    	Class c=DataClass.class;
+    	Method m[]=c.getMethods();
+    	
+    }
+}

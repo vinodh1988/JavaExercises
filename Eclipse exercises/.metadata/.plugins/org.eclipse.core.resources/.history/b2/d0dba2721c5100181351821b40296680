@@ -1,0 +1,25 @@
+package com.io;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class ReadandStore {
+	public static BufferedReader getReader(){
+		InputStreamReader i=new InputStreamReader(System.in);
+		BufferedReader r=new BufferedReader(i);
+		return r;
+	}
+	
+	public static void main(String n1[]){
+		
+		BufferedReader b=getReader();
+        try {
+			String   n=b.readLine();
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

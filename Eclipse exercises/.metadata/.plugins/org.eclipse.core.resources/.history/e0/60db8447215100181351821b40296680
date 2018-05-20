@@ -1,0 +1,9 @@
+package com.io;
+
+public class ObjectWrite {
+
+	public ObjectWrite() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

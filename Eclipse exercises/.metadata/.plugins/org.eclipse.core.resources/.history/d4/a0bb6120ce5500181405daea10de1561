@@ -1,0 +1,13 @@
+package com.io;
+
+public class GenericDemo {
+  public static void main(String n[]){
+	  Generic<Integer> g=new Generic<Integer>(12);
+	  g.setA(3279);
+	  g.display();
+	  
+	  Generic g1=new Generic("Raj");
+	  g.setA(30);
+	  g.display();
+  }
+}

@@ -1,0 +1,10 @@
+package com.util;
+
+import java.util.Set;
+
+public class SetDemo {
+  public static void main(String n[]){
+	  Set l=new HashSet();
+	  
+  }
+}

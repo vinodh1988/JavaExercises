@@ -1,0 +1,17 @@
+package com.data.test;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class BlobRead {
+  public static void main(String n[]){
+	  try{
+		  Class.forName("oracle.jdbc.driver.OracleDriver");
+		  Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","hr","hr");
+		  
+	  }
+	  catch(Exception e){
+		  e.printStackTrace();
+	  }
+  }
+}

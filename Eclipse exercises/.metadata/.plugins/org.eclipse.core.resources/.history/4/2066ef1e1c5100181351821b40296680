@@ -1,0 +1,17 @@
+package com.io;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class ReadandStore {
+	public BufferedReader getReader(){
+		InputStreamReader i=new InputStreamReader(System.in);
+		BufferedReader r=new BufferedReader(i);
+		return r;
+	}
+	
+	public static void main(String n[]){
+		
+		i
+	}
+}

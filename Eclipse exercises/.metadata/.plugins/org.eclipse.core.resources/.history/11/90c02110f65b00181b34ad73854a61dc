@@ -1,0 +1,24 @@
+package com.util;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+
+import com.io.Employee;
+
+public class MapDemo {
+    public static void main(String n[]){
+    	Map<String,Employee> p=new HashMap<String,Employee>();
+        p.put("Raj", new Employee(1,"Raj","Chennai",48));
+        p.put("Ram",new Employee(2,"Ram","Chennai",24));
+        p.put("Raj", new Employee(3,"Raj","Nagpur",34));
+        
+        Set<String> s=p.keySet();
+        
+        for(String x:s)
+        	System.out.println(x);
+        
+        System.out.println("Accessing Data..!!!");
+        System.out.println(x.get("Raj"));
+    }
+}

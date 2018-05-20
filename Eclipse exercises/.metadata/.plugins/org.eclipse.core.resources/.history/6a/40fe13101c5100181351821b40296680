@@ -1,0 +1,8 @@
+package com.io;
+
+public class ReadandStore {
+	
+	public static void main(String n[]){
+		
+	}
+}

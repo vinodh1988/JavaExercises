@@ -1,0 +1,59 @@
+package com.io;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class ReadandStore {
+	public static BufferedReader getReader(){
+		InputStreamReader i=new InputStreamReader(System.in);
+		BufferedReader r=new BufferedReader(i);
+		return r;
+	}
+	
+	public static void main(String n1[]){
+		
+		BufferedReader b=getReader();
+		File f=new File("D:\\info.txt");
+		FileWriter f1=null;
+		BufferedWriter b1=null;
+		try {
+			f1=new FileWriter(f);
+			b1=new BufferedWriter(f1);
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		
+		while(true){
+				try {
+					String   n=b.readLine();
+					int number=Integer.parseInt(b.readLine());
+					b1.write(n+", "+number);
+					if(number==-1)
+						break;
+				} 
+				catch (IOException e) {
+			// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				finally{
+						
+				}
+        }
+		
+		try {
+			b1.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println("File has been written....");
+	}
+		
+	
+	}
+

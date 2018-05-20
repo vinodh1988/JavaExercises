@@ -1,0 +1,14 @@
+package com.i18n;
+
+import java.text.NumberFormat;
+import java.util.Locale;
+
+public class NumFormat {
+  public static void main(String arg[]){
+	double d=12000.34;
+	Locale l=new Locale("hi","IN");
+	
+	NumberFormat n=NumberFormat.getCurrencyInstance(l);
+	
+  }
+}

@@ -1,0 +1,5 @@
+package isqlglobal.service;
+
+public class EnquiryService {
+
+}

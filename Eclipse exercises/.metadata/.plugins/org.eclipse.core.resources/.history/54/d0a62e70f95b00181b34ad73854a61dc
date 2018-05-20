@@ -1,0 +1,10 @@
+package com.i18n;
+
+import java.util.Locale;
+
+public class NumFormat {
+  public static void main(String n[]){
+	double d=12000.34;
+	Locale l=new Locale();
+  }
+}

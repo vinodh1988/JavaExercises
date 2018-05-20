@@ -1,0 +1,15 @@
+package com.io;
+
+public class ThreeD {
+  public static void main(String n[]){
+	  int p[][][]={{{1,2,3},{2,3,5}},
+			       {{3,4,4},{9,8,8}},
+			       {{1,3,4},{5,6,7}}};
+	  
+	  System.out.println(p[1][1][0]);
+	  
+	  System.out.println(p[2][1][2]);
+	  
+	  
+  }
+}

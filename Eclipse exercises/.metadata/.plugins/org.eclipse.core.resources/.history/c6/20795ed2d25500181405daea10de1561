@@ -1,0 +1,7 @@
+package com.util;
+
+public class CollectDemo {
+   public static void main(String n[]){
+	   
+   }
+}

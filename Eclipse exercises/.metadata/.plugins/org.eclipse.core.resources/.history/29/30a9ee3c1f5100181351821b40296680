@@ -1,0 +1,8 @@
+package com.io;
+
+public class ImageRead {
+  public static void main(String n[]){
+	  
+	  
+  }
+}
